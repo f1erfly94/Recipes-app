@@ -34,7 +34,7 @@ export default function RecipeCard({ recipe, addToFavorites, isFavorite }: Recip
             <div className="px-4 pb-4">
                 <button
                     onClick={() => addToFavorites(recipe)}
-                    className={`w-full py-2 rounded ${isFavorite ? 'bg-red-500 text-white' : 'bg-gray-200'}`}
+                    className={`w-full py-2 rounded ${isFavorite ? 'bg-[#442173] text-white' : 'bg-gray-900'}`}
                 >
                     {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
                 </button>

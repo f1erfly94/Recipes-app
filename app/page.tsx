@@ -10,6 +10,7 @@ import { Recipe } from './types';
 import Link from 'next/link';
 import { useFavorites } from './hooks/useFavorites';
 import RecipeCard from "@/app/components/RecipeCars";
+import NoRecipes from "@/app/components/NoRecipes";
 
 const ITEMS_PER_PAGE = 2;
 
@@ -66,7 +67,7 @@ export default function Home() {
             ) : error ? (
                 <div className="text-center py-10">Error loading recipes</div>
             ) : !recipesData?.meals ? (
-                <div className="text-center py-10">No recipes found</div>
+                <NoRecipes/>
             ) : (
                 <>
                     <CategoryFilter
