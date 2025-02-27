@@ -10,7 +10,7 @@ interface PaginationProps {
 }
 
 export default function Pagination({currentPage, totalPages, onPageChange}: PaginationProps) {
-    if (totalPages <= 1) {
+    if (totalPages <= 0) {
         return (<NoRecipes/>)
     }
 
