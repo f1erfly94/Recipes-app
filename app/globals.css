@@ -1,24 +1,51 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: var(--font-roboto), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(255, 255, 255, 0.94);
+}
+
+
+button {
+    background-color: #442173;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #ffc900;
+}
+
+a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+a:hover {
+   color: #ffc900;
+}
+
+input, textarea {
+    background-color: #1e1e1e;
+    color: #E0E0E0;
+    border: 1px solid #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #B0B0B0;
 }
